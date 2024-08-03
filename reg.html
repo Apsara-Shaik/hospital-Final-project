@@ -1,0 +1,228 @@
+<html>
+<head>
+    <style>
+    nav ul li{
+        float: right;
+       display: inline;
+       margin-right: 50px;
+       font-size:x-large;
+
+    }
+     a:link{
+    color:black;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:black;
+}
+body{
+    background-color: rgb(125, 196, 172);
+    background-attachment: fixed;
+}
+h1{
+    color: black;
+    padding: 10px;
+}
+h2{
+    color:white;
+}
+font{
+    color:black
+}
+.container{
+     align-items: center;
+     justify-content: center;
+     display: flex;
+    
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+body{
+    background-size: 100% 100%;
+}
+input[type=text],input[type=password],input[type=date],input[type=tel]{
+    width:100%;
+    padding:15px;
+    margin: 10px;
+}
+input[type=submit]{
+    width: 80%;
+    padding: 10px;
+    background-color:cornflowerblue;
+}
+footer{
+    position:absolute;
+    top:1300px;
+    left:40%;
+    text-align: center;
+}
+h2{
+    background-color:cornflowerblue;
+}
+/* Media Queries */
+
+/* For devices with a maximum width of 600px (e.g., smartphones) */
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type=text], input[type=password], input[type=date], input[type=tel] {
+        width: 95%;
+        padding: 12px;
+    }
+
+    input[type=submit] {
+        width: 90%;
+        padding: 12px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+}
+
+/* For devices with a maximum width of 1024px (e.g., tablets) */
+@media (max-width: 1024px) {
+    nav ul li {
+        float: none;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 180px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    input[type=text], input[type=password], input[type=date], input[type=tel] {
+        width: 90%;
+        padding: 14px;
+    }
+
+    input[type=submit] {
+        width: 85%;
+        padding: 14px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+}
+
+/* For devices larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+    nav ul li {
+        float: right;
+        display: inline;
+        margin-right: 50px;
+    }
+
+    img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    input[type=text], input[type=password], input[type=date], input[type=tel] {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type=submit] {
+        width: 80%;
+        padding: 10px;
+    }
+
+    footer {
+        position: absolute;
+        top: 1300px;
+        left: 40%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
+
+</style>
+</head>
+<body>
+    <body background="s1.jpg"></body>
+    <nav>
+    <ul>
+        <li> <a href="contact.html">CONTACT</li>
+        <li> <a href="reg.html">REGISTRATION FORM</a></li>
+        <li> <a href="Sign in.html">SIGN IN</a></li> 
+        <li> <a href="about.html">ABOUT</a></li> 
+        <li><a href="services.html">SERVICES</a></li>
+        <li> <a href="home.html">HOME</a></li>
+        <img src="logo.webp">
+    </ul>
+    </nav>
+    <center><font size="10"><i>MAKE AN APPOINTMENT</i></font></center>
+    <div class="container">
+        <form action="regsuc.html">
+        <h1><i>Patient Name</i></h1>
+        <input type="text" name="paname" ><br>
+        <h1><i>Select Date</i></h1>
+        <input type="date" name="date"><br>
+        <h1><i>Date Of Birth</i></h1>
+        <input type="date" name="bname"><br>
+        <h1><i>GENDER</i></h1>
+        <input type="radio" name="gender" value="f">female<br>
+        <input type="radio" name="gender" value="m">male<br>
+        <input type="radio" name="gender" value="o">others<br>
+        <h1><i>Doctor Name<i></h1>
+            <input type="radio" name="doc" value="d1">DR Angella<br>
+            <input type="radio" name="doc" value="d2">DR Pallav<br>
+            <input type="radio" name="doc" value="d3">DR Mercy<br>
+            <input type="radio" name="doc" value="d4">DR Sowmitra<br>
+        <input type="radio" name="doc" value="d5">DR Mossi
+        <h1><i>Phone Number</i></h1>
+        <input type="tel" name="personal" id="per1" pattern="[0-9]{10}" title="The Ten digits number"><br><br><br>
+        </form>
+        <input type="submit" value="Confirm My Appointment">
+    </div>
+    <footer>
+        <h2>&copy;  2024 LIFE HOSPITAL. ALL Rights Reserved</h2>
+    </footer>
+    </body>
+</html>

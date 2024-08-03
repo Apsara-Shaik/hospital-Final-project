@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        nav ul li {
+            float: right;
+            display: inline;
+            margin-right: 50px;
+            font-size: x-large;
+        }
+        a:link{
+                color:red;
+            }
+            /*visited kink*/
+            a:visited{
+                color:skyblue;
+            }
+            /*mouse over link*/
+            a:hover{
+                color:red;
+            }
+            a:active{
+                color:black;
+            }
+       
+        h1 {
+            color: black;
+            padding: 10px;
+        }
+        h2 {
+            color: white;
+            background-color: skyblue;
+        }
+        font {
+            color: black;
+        }
+        .container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        img {
+            width: 200px;
+            height: 100px;
+        }
+        input[type=text], input[type=password], input[type=email] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px;
+        }
+        input[type=submit] {
+            width: 80%;
+            padding: 10px;
+            background-color: rgb(236, 174, 223);
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            text-align: center;
+        }
+        body{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <body background="si1.jpg"></body>
+    <nav>
+        <ul>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="reg.html">REGISTRATION FORM</a></li>
+            <li><a href="Sign in.html">SIGN IN</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <img src="logo.webp" alt="Logo">
+        </ul>
+    </nav>
+    <center><font size="9">Login In</font></center><br>
+    <div class="container">
+        <form id="loginForm" action="loginsuc.html">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <footer>
+        <h2>&copy; 2024 LIFE HOSPITAL. ALL Rights Reserved</h2>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            
+            // Simple email validation
+            if (emailPattern==null||emailPattern=="") {
+                alert('Please enter a valid email address.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+            
+            // Check if password field is not empty
+            if (password.trim() === '') {
+                alert('Please enter your password.');
+                event.preventDefault(); // Prevent form submission
+                return;
+            }
+        });
+    </script>
+</body>
+</html>

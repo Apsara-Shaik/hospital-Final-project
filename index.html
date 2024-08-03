@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>MY FIRST WEBSITE</title>
+        <style>
+            nav ul li{
+        float: right;
+       display: inline;
+       margin-right: 50px;
+       font-size:x-large;
+
+    }
+    a:link{
+                color:red;
+            }
+            /*visited kink*/
+            a:visited{
+                color:skyblue;
+            }
+            /*mouse over link*/
+            a:hover{
+                color:red;
+            }
+            a:active{
+                color:black;
+            }
+img{
+    width: 200px;
+    height: 100px;
+}
+footer{
+    position:absolute;
+    bottom: 0%;
+    left:40%;
+    text-align: center;
+}
+h2{
+    background-color:lightblue;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind other content */
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+.con{
+    text-align: center;
+    padding: 150px;
+    color:whitesmoke;
+    text-shadow: 5px 5px 10px red;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <nav>
+        <ul>
+            <li> <a href="contact.html">CONTACT</li>
+                <li> <a href="reg.html">REGISTRATION FORM</a></li>
+                <li> <a href="Sign in.html">SIGN IN</a></li> 
+                <li> <a href="about.html">ABOUT</a></li> 
+                <li><a href="services.html">SERVICES</a></li>
+                <li> <a href="home.html">HOME</a></li>
+                <img src="logo.webp"/>
+        </ul>
+        </nav>
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="in1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="con">
+       <b> <font size="12"><i><br>life is creative<br><i></i></i></font></b>
+         <b><font size="12"><i>  enjoy before it ends..</i></font></b>
+         </div>
+         <div class="foot">
+        <footer>
+            <h2>&copy;  2024 LIFE HOSPITAL. ALL Rights Reserved</h2>
+        </footer>
+        </div>
+    </body>
+</html>
